@@ -48,8 +48,8 @@ main {
   left: 0;
   width: 100%;
   z-index: 7;
-  background-color: rgb(255, 255, 255, 0.98);
-  transition: all 0.7s ease;
+  background-color: rgb(255, 255, 255, 0.95);
+  transition: all 0.6s ease;
   box-shadow: 0 0 10px black;
 }
 .header.out {
