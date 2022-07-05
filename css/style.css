@@ -48,7 +48,7 @@ main {
   left: 0;
   width: 100%;
   z-index: 7;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255, 0.98);
   transition: all 0.7s ease;
   box-shadow: 0 0 10px black;
 }
@@ -183,7 +183,7 @@ main {
     position: static;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: inherit;
   }
   .menu__list {
     display: flex;
