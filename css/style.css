@@ -28,7 +28,8 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  background-color: #ffdef7;
+  background-image: url("../img/Fon.jpg");
+  background-repeat: repeat-y;
 	/* для теста */
   height: 1700px;
 }
@@ -190,10 +191,10 @@ main {
   .menu__list {
     display: flex;
     font-size: 14px;
-    margin-left: 30px;
+    margin-left: 50px;
   }
   .menu__item {
-    margin: 0px 20px 0px 0px;
+    margin: 0px 30px 0px 0px;
     transition: all 0.15s;
   }
   .menu__item:last-child {
