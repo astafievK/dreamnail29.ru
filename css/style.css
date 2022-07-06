@@ -151,6 +151,7 @@ nav {
 .hero__img {
   padding: 0 25%;
   margin-bottom: 7%;
+  user-select: none;
 }
 .hero__img-hero {
   border-radius: 5px;
@@ -175,18 +176,17 @@ nav {
   border-radius: 10px;
   background-color: #fff;
 }
+
 /* ползунок страницы */
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 8px;
 }
-
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track { /*полоска для ползунка*/
   -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
   background-color: #f9f9fd;
   border-radius: 10px;
 }
-
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb { /*сам ползунок*/
   border-radius: 10px;
   background:  #f8bad0;
 }
