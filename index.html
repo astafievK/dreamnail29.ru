@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, user-scalable=no">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" href="../img/html-logo.png" type="images/x-icon">
-        <title>Главная</title>
-    </head>
-    <body>
-        <header class="header">
-            <div class="header__container _container">
-                <a href="#" class="header__logo">DREAM NAILS</a>
-                <div class="header__menu menu">
-                    <div class="menu__icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <nav class="menu__body">
-                        <ul class="menu__list">
-                            <li class="menu__item"><a data-goto="" href="#" class="menu__link">Чему научим</a></li>
-                            <li class="menu__item"><a data-goto="" href="#" class="menu__link">Отзывы учеников</a></li>
-                            <li class="menu__item"><a data-goto="" href="#" class="menu__link">Кто учит</a></li>
-                            <li class="menu__item"><a data-goto="" href="#" class="menu__link">Купить</a></li>
-                        </ul>
-                            <img src="../img/phone-icon.png" alt="" class="menu__number__picture">
-                            <a href="tel:+79115527228" class="menu__number">+7 (911) 552-72-28</a>
-                    </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Главная</title>
+</head>
+<body>
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="row">
+                        <div class="col-3 logo">
+                            <a href="#" class="header_logo">DREAM NAILS</a>
+                            <a href="" class="logo_a">ПРивет</a>
+                        </div>
+                        <div class="col-5">
+                            <ul class="list-unstyled">
+                                <li class="d-inline menu_link"><a href="#" class="menu_link">Чему научим</a></li>
+                                <li class="d-inline menu_link"><a href="#" class="menu_link">Отзывы учеников</a></li>
+                                <li class="d-inline menu_link"><a href="#" class="menu_link">Кто учит</a></li>
+                                <li class="d-inline menu_link"><a href="#" class="menu_link">Купить</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-3 offset-1">
+                            <img src="../img/phone_icon.png" alt="" class="menu_number_picture">
+                            <a href="tel:+79115527228" class="menu_number">+7 (911) 552-72-28</a>
+                        </div>
+                </nav>
                 </div>
             </div>
         </header>
-        <main>
-            <section class="hero">
-                <div class="hero__container _container">
-                    <div class="hero__img">
-                        <img src="img/hero-img.png" alt="" class="hero__img-hero">
-                    </div>
-                    <div class="hero__content">
-                        <h1 class="hero__title">Курсы DREAM NAILS</h1>
-                        <div class="hero__descr">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Eaque illum non dolore, iste omnis unde veniam excepturi
-                            temporibus iusto soluta qui quidem quis laboriosam ab blanditiis fugit dolores velit natus.
-                        </div>
-                        <a href="#" class="hero__btn">Написать в ВК</a>
-                    </div>
+
+        <div class="container">
+            <div class="row first_screen">
+                <div class="col-4">
+                    <img src="/img/hero_img.png" alt="" class="hero_img">
                 </div>
-            </section>
-        </main>
-        <footer>Я подвал</footer>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="js/script.js"></script>
-    </body>
+                <div class="col-8 hero_contetnt">
+                    <h1 class="hero_title">Курсы DREAM NAILS</h1>
+                    <span class="hero_descr">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Eaque illum non dolore, iste omnis unde veniam excepturi
+                        temporibus iusto soluta qui quidem quis laboriosam ab blanditiis fugit dolores velit natus.
+                    </span>
+                    <a href="#" class="hero_btn">Написать в ВК</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
 </html>
