@@ -32,7 +32,7 @@ body {
   background-repeat: repeat-y;
 	/* для теста */
   height: 2600px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 main {
@@ -175,6 +175,21 @@ nav {
   border-radius: 10px;
   background-color: #fff;
 }
+/* ползунок страницы */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background:  #f8bad0;
+}
 
 
 @media (min-width: 599.98px) {
@@ -209,9 +224,11 @@ nav {
   .menu__item:last-child {
     margin: 0;
   }
+  /*
   .menu__item:hover {
-    transform: scale(1.2);
+    transform: scale(1.07);
   }
+  */
   .menu__link {
     color: #000;
     transition: all 0.15s;
