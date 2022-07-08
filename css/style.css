@@ -44,7 +44,7 @@
   }
 
   header {
-    position: flex;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -65,10 +65,18 @@
     text-decoration: none;
   }
 
+  .header_logo:hover {
+    color: #000;
+  }
+
   .header_logo_picture{
     max-width: 30px;
     max-height: 30px;
     margin-top: -7px
+  }
+
+  header.out {
+    transform: translateY(-130%);
   }
 
   .list-unstyled {
@@ -83,10 +91,15 @@
     margin-top: 16px;
   }
 
+  .menu_number:hover {
+    color: #000;
+  }
+
   .menu_number_picture {
     width: 30px;
     height: 30px;
     margin-top: -3px;
+    text-align: right;
   }
 
   .menu_link {
@@ -96,7 +109,7 @@
     transition: 0.2s linear;
   }
 
-   .menu_link:hover {
+  .menu_link:hover {
     color: deeppink; /* Цвет текста */
    }
 
@@ -105,7 +118,7 @@
   }
 
   .first_screen {
-    margin-top: 120px;
+    margin-top: 200px;
   }
 
   .hero_img {
@@ -114,7 +127,7 @@
     user-select: none;
   }
 
-  .hero_contetnt {
+  .hero_content {
     display: flex;
     justify-content: center;
     flex-flow: column;
@@ -125,27 +138,27 @@
     font-size: 45px;
     justify-content: center;
     margin-bottom: 10%;
-    text-align: left;
   }
 
   .hero_descr {
-    font-size: 18px;
+    font-size: 23px;
     font-weight: 300;
+    text-align: center;
   }
 
-  .hero_btn {
+  .hero_button {
     display: flex;
     justify-content: center;
-    padding: 15px 5px;
+    padding: 50px 5px;
     user-select: none;
   }
 
-  .hero_btn img{
+  .hero_button img{
     justify-content: center;
     display: flex;
   }
 
-  .hero_btn a {
+  .hero_button a {
     display: flex;
     justify-content: center;
   }
@@ -163,4 +176,8 @@
     -webkit-box-shadow: 5px 5px 5px -5px rgb(34 60 80 / 20%) inset;
     background-color: #f9f9fd;
     border-radius: 10px;
+}
+
+.number{
+  text-align: right;
 }
