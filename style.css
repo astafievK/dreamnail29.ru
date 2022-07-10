@@ -128,8 +128,8 @@
   }
 
   .hero_img {
-    max-width: 96%;
-    max-height: 96%;
+    max-width: 90%;
+    max-height: 90%;
     user-select: none;
   }
 
@@ -153,6 +153,9 @@
     margin-bottom: 7%;
   }
 
+  .hero_label{
+    font-weight: bold;
+  }
   .btn_vk-link {
     position: relative;
     display: flex;
