@@ -51,6 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 
 html, body {
   height: 100%;
+  color: #38271D;
 }
 
 body {
@@ -60,10 +61,6 @@ body {
   background-repeat: repeat;
     /* для теста */
   height: 2600px;
-}
-
-main {
-  flex: 1;
 }
 
 nav {
@@ -250,23 +247,28 @@ header.out {
 }
 
 .second_screen_title{
-  font-size: 65px;
+  font-size: 20px;
   font-weight: bold;
-  text-decoration: underline;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .second_screen_list_of_skills{
   font-size: 27px;
-  margin-top: 15%;
+  margin-top: 5%;
+  font-weight: bold;
 }
 
 .second_screen_book{
-  max-width: 75%;
-  max-height: 75%;
+  margin-top: 5%;
+  max-width: 45%;
+  max-height: 45%;
 }
 
 .second_screen_hand{
-  max-width: 130%;
-  max-height: 130%;
+  max-width: 80%;
+  max-height: 80%;
+  transform: rotate(-75deg);
+}
+
+.book{
+  display: inline-block;
 }
