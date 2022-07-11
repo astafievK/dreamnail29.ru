@@ -16,6 +16,22 @@
   100% {opacity: 1;}
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #f8bad0;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgb(34 60 80 / 20%) inset;
+  background-color: #f9f9fd;
+  border-radius: 10px;
+  scroll-behavior: smooth;
+}
+
 a{
   text-decoration: none;
   color: #000;
@@ -25,6 +41,9 @@ ul, ol, li {
   list-style: none;
 }
 
+img{
+  user-select: none;
+}
 h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
   font-size: inherit;
@@ -135,36 +154,35 @@ header.out {
   margin-top: 180px;
 }
 
-.hero_img {
+.first_screen_hero_img {
   max-width: 90%;
   max-height: 90%;
-  user-select: none;
 }
 
-.hero_content {
+.first_screen_hero_content {
   display: flex;
   flex-flow: column;
   justify-content: center;
 }
 
-.hero_title {
+.first_screen_hero_title {
   display: flex;
   font-size: 45px;
   justify-content: center;
   margin-bottom: 9%;
 }
 
-.hero_descr {
+.first_screen_hero_descr {
   font-size: 30px;
   font-weight: 300;
   justify-content: center;
   margin-bottom: 7%;
 }
 
-.hero_label{
+.first_screen_hero_label{
   font-weight: bold;
 }
-.btn_vk-link {
+.first_screen_btn_vk-link {
   position: relative;
   display: flex;
   /* растояние между иконкой и текстом (gap) */
@@ -184,16 +202,16 @@ header.out {
   
 }
 
-.btn_vk-link:hover {
+.first_screen_btn_vk-link:hover {
   box-shadow: 0 0 12px #436EAB;
 }
 
-.vk_link_svg {
+.first_screen_vk_link_svg {
   height: 60px;
   width: 60px;
 }
 
-.vk-link_insc {
+.first_screen_vk-link_insc {
   width: 150px;
   text-align: center;
   font-size: 16px;
@@ -202,7 +220,7 @@ header.out {
   max-width: 100%;
 }
 
-.vk-link_discount {
+.first_screen_vk-link_discount {
   position: absolute;
   right: -10px;
   top: -10px;
@@ -215,30 +233,40 @@ header.out {
   max-height: 100%;
 }
 
-.hero_button img{
+.first_screen_hero_button img{
   justify-content: center;
   display: flex;
 }
 
-.hero_button a {
+.first_screen_hero_button a {
   display: flex;
   justify-content: center;
 }
 
-::-webkit-scrollbar {
-  width: 7px;
+
+
+.second_screen{
+  margin-top: 10%;
 }
 
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background: #f8bad0;
+.second_screen_title{
+  font-size: 65px;
+  font-weight: bold;
+  text-decoration: underline;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: 5px 5px 5px -5px rgb(34 60 80 / 20%) inset;
-  background-color: #f9f9fd;
-  border-radius: 10px;
-  scroll-behavior: smooth;
+.second_screen_list_of_skills{
+  font-size: 27px;
+  margin-top: 15%;
 }
 
+.second_screen_book{
+  max-width: 75%;
+  max-height: 75%;
+}
 
+.second_screen_hand{
+  max-width: 130%;
+  max-height: 130%;
+}
