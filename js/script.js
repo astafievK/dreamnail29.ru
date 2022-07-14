@@ -39,11 +39,9 @@ window.onresize = function (e) {
         console.log('1');
     }
 };
+*/
 
-
-
-
-// Прокрутка при клике
+// прокрутка при клике (???)
 const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 if (menuLinks.length > 0) {
     menuLinks.forEach(menuLink => {
@@ -64,4 +62,15 @@ if (menuLinks.length > 0) {
         }
     }
 }
-*/
+
+
+//удаление якоря из ссылки
+$('.menu_link').click(function(e){
+	var anch = this.hash.slice(0);
+	if(!anch || !anch[0] === "#") return;
+	e.preventDefault();
+	window.location.hash = '';
+	var offset = $(anch).offset();
+	$("html, body").animate({scrollTop:$(anch).offset().top},100);
+	if(history.pushState) { history.pushState({}, null, window.location.pathname); }
+});

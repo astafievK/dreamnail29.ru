@@ -38,7 +38,7 @@ a{
 }
 
 ul, ol, li {
-  list-style: none;
+  list-style: "— ";
 }
 
 img{
@@ -60,7 +60,7 @@ body {
   background-image: url("../img/background.jpg");
   background-repeat: repeat;
     /* для теста */
-  height: 2600px;
+  height: 7000px;
 }
 
 nav {
@@ -179,6 +179,7 @@ header.out {
 .first_screen_hero_label{
   font-weight: bold;
 }
+
 .first_screen_btn_vk-link {
   position: relative;
   display: flex;
@@ -209,10 +210,10 @@ header.out {
 }
 
 .first_screen_vk-link_insc {
-  width: 150px;
+  width: 180px;
   text-align: center;
-  font-size: 16px;
-  margin-left: 15%;
+  font-size: 20px;
+  margin-left: 10%;
   max-height: 100%;
   max-width: 100%;
 }
@@ -247,28 +248,41 @@ header.out {
 }
 
 .second_screen_title{
-  font-size: 20px;
+  margin-top: 5%;
+  font-size: 45px;
   font-weight: bold;
 }
 
-.second_screen_list_of_skills{
-  font-size: 27px;
-  margin-top: 5%;
+.second_screen_title_book{
+  margin-top: 22%;
+}
+
+.second_screen_list{
+  font-size: 20px;
+  margin-top: 7%;
   font-weight: bold;
 }
 
 .second_screen_book{
+  max-width: 60%;
+  max-height: 60%;
+  margin-top: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list_item{
+  margin-top: 3%;
+}
+
+
+.third_screen{
+  margin-top: 10%;
+}
+
+.third_screen_title{
+  font-size: 45px;
+  font-weight: bold;
   margin-top: 5%;
-  max-width: 45%;
-  max-height: 45%;
-}
-
-.second_screen_hand{
-  max-width: 80%;
-  max-height: 80%;
-  transform: rotate(-75deg);
-}
-
-.book{
-  display: inline-block;
 }
