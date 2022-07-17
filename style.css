@@ -49,6 +49,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
 }
 
+
+
 html, body {
   height: 100%;
 }
@@ -81,7 +83,7 @@ body {
 footer{
   background-color: #000;
   z-index: 8;
-  height: 100px;
+  height: 250px;
   width: 100%;
 }
 
@@ -299,32 +301,28 @@ header.out {
 }
 
 .third_screen_image{
-  max-width: 37%;
-  max-height: 37%;
+  max-width: 45%;
+  max-height: 45%;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto
 }
 
 .third_screen_text{
-  display: block;
-  font-size: 27px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
   text-align: left;
-  max-width: 40%;
+  margin-top: 10%;
+  max-width: 93%;
+  vertical-align: middle;
+  word-wrap: break-word;
 }
 
 .third_screen_row{
-  display: flex;
-  justify-content: space-between;
-}
-
-.third_screen_row1{
   margin-top: 5%;
 }
 
 .third_screen_row2{
-  margin-top: 10%;
-}
-
-.third_screen_item{
-  display: flex;
-  justify-content: center;
+  margin-top: 7%;
 }
