@@ -81,10 +81,12 @@ body {
 }
 
 footer{
-  background-color: #000;
+  background-color: rgb(129, 129, 129);
   z-index: 8;
   height: 250px;
   width: 100%;
+  opacity: 50%;
+  color: white;
 }
 
 .header_logo {
@@ -278,7 +280,7 @@ header.out {
   margin-left: 10%;
 }
 
-.second_screen_picture{
+.second_screen_nails{
   max-width: 50%;
   max-height: 50%;
   margin-top: 5%;
@@ -303,7 +305,6 @@ header.out {
 .third_screen_image{
   max-width: 45%;
   max-height: 45%;
-
   display: block;
   margin-left: auto;
   margin-right: auto
@@ -312,7 +313,7 @@ header.out {
 .third_screen_text{
   font-size: 20px;
   font-weight: 600;
-  text-align: left;
+  text-align: center;
   margin-top: 10%;
   max-width: 93%;
   vertical-align: middle;
