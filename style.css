@@ -51,16 +51,6 @@ h1, h2, h3, h4, h5, h6 {
 
 html, body {
   height: 100%;
-  color: #38271D;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  background-image: url("../img/background.jpg");
-  background-repeat: repeat;
-    /* для теста */
-  height: 7000px;
 }
 
 nav {
@@ -77,6 +67,22 @@ header {
   transition: all 0.6s ease;
   box-shadow: 0 0 5px rgb(0, 0, 0);
   user-select: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/background.jpg");
+  background-repeat: repeat;
+    /* для теста */
+  max-height: 7000px;
+}
+
+footer{
+  background-color: #000;
+  z-index: 8;
+  height: 100px;
+  width: 100%;
 }
 
 .header_logo {
@@ -267,9 +273,14 @@ header.out {
   max-width: 60%;
   max-height: 60%;
   margin-top: 10%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10%;
+}
+
+.second_screen_picture{
+  max-width: 50%;
+  max-height: 50%;
+  margin-top: 5%;
+  margin-left: 20%;
 }
 
 .list_item{
@@ -282,7 +293,38 @@ header.out {
 }
 
 .third_screen_title{
+  margin-top: 5%;
   font-size: 45px;
   font-weight: bold;
+}
+
+.third_screen_image{
+  max-width: 37%;
+  max-height: 37%;
+}
+
+.third_screen_text{
+  display: block;
+  font-size: 27px;
+  font-weight: 500;
+  text-align: left;
+  max-width: 40%;
+}
+
+.third_screen_row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.third_screen_row1{
   margin-top: 5%;
+}
+
+.third_screen_row2{
+  margin-top: 10%;
+}
+
+.third_screen_item{
+  display: flex;
+  justify-content: center;
 }

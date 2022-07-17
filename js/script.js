@@ -63,7 +63,6 @@ if (menuLinks.length > 0) {
     }
 }
 
-
 //удаление якоря из ссылки
 $('.menu_link').click(function(e){
 	var anch = this.hash.slice(0);
