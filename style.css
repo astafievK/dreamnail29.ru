@@ -44,15 +44,15 @@ ul, ol, li {
 img{
   user-select: none;
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
   font-size: inherit;
 }
 
-
-
 html, body {
   height: 100%;
+  color: #38271D;
 }
 
 nav {
@@ -76,8 +76,6 @@ body {
   flex-direction: column;
   background-image: url("../img/background.jpg");
   background-repeat: repeat;
-    /* для теста */
-  max-height: 7000px;
 }
 
 footer{
@@ -87,6 +85,7 @@ footer{
   width: 100%;
   opacity: 50%;
   color: white;
+  margin-top: 3%;
 }
 
 .header_logo {
@@ -150,7 +149,7 @@ header.out {
 }
 
 .menu_link:hover {
-  color: deeppink; /* Цвет текста */
+  color: deeppink;
 }
 
 .d-inline {
@@ -251,16 +250,14 @@ header.out {
   justify-content: center;
 }
 
-
-
-.second_screen{
-  margin-top: 10%;
-}
-
-.second_screen_title{
+.screen_title{
   margin-top: 5%;
   font-size: 45px;
   font-weight: bold;
+}
+
+.second_screen{
+  margin-top: 10%;
 }
 
 .second_screen_title_book{
@@ -296,15 +293,9 @@ header.out {
   margin-top: 10%;
 }
 
-.third_screen_title{
-  margin-top: 5%;
-  font-size: 45px;
-  font-weight: bold;
-}
-
 .third_screen_image{
-  max-width: 45%;
-  max-height: 45%;
+  max-width: 60%;
+  max-height: 60%;
   display: block;
   margin-left: auto;
   margin-right: auto
@@ -313,17 +304,59 @@ header.out {
 .third_screen_text{
   font-size: 20px;
   font-weight: 600;
-  text-align: center;
-  margin-top: 10%;
-  max-width: 93%;
+  margin-top: 5%;
+  max-width: 100%;
   vertical-align: middle;
   word-wrap: break-word;
 }
 
-.third_screen_row{
+.third_screen_row1{
   margin-top: 5%;
 }
 
 .third_screen_row2{
-  margin-top: 7%;
+  margin-top: 4%;
+}
+
+.fourth_screen{
+  margin-top: 10%;
+}
+
+.fifth_screen{
+  margin-top: 10%;
+}
+
+.fifth_screen_picture{
+  max-width: 95%;
+  max-height: 95%;
+  margin-top: 10%;
+}
+
+.fifth_screen_descr{
+  font-size: 30px;
+  vertical-align: middle;
+  margin-top: 10%;
+  line-height: 2;
+}
+
+.fifth_screen_descr_hero_label{
+  font-size: 40px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.fifth_screen_descr_main{
+  margin-top: 15%;
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.sixth_screen{
+  margin-top: 10%;
+}
+
+.sixth_screen_image{
+  margin-top: -3%;
 }
