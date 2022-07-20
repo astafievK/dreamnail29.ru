@@ -79,13 +79,16 @@ body {
 }
 
 footer{
-  background-color: rgb(129, 129, 129);
+  background-color: #f5f6f9;
+  max-height: 9%;
   z-index: 8;
-  height: 250px;
-  width: 100%;
-  opacity: 50%;
-  color: white;
   margin-top: 3%;
+  font-size: 15px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  color: black;
 }
 
 .header_logo {
@@ -123,6 +126,7 @@ header.out {
 .menu_number {
   display: inline-block;
   margin-top: 16px;
+  font-weight: 600;
 }
 
 .menu_number:hover {
@@ -192,7 +196,6 @@ header.out {
 .first_screen_btn_vk-link {
   position: relative;
   display: flex;
-  /* растояние между иконкой и текстом (gap) */
   gap: 5px;
   align-items: center;
   border: 3px solid #436EAB;
@@ -327,9 +330,8 @@ header.out {
 }
 
 .fifth_screen_picture{
-  max-width: 95%;
-  max-height: 95%;
-  margin-top: 10%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .fifth_screen_descr{
@@ -354,9 +356,48 @@ header.out {
 }
 
 .sixth_screen{
-  margin-top: 10%;
+  margin-top: 11%;
 }
 
 .sixth_screen_image{
   margin-top: -3%;
+}
+
+.footer_label{
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.footer_label:hover{
+  color: black;
+}
+
+.footer_logo{
+  color: grey;
+  font-size: 37px;
+  font-weight: bold;
+  transition: 0.2s linear;
+}
+
+.footer_logo:hover{
+  color: black;
+}
+
+.footer_image_gps{
+  max-width: 2%;
+  max-height: 2%;
+}
+
+.footer_image_phone{
+  max-width: 3%;
+  max-height: 3%;
+}
+
+.contacts{
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.contacts_item{
+  text-align: right;
 }
