@@ -3,202 +3,306 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="../img/logo-picture.png" type="images/x-icon">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&display=swap&_V=20220720234459" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css?_V=20220720234459">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="icon" href="img/logo-picture.png" type="images/x-icon">
     <title>Курс в Архангельске</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-            <nav>
-                <div class="row">
-                    <div  class="col-3 logo">
-                        <image src="../img/logo-picture.png" class="header_logo_picture header_element" class="logo_a">
-                        <a class="header_logo">DREAM NAILS</a>
-                    </div>
-                    <div class="col-6">
-                        <ul class="list-unstyled">
-                            <li class="d-inline menu_link"><a href="#second_screen" class="menu_link header_element">Чему научим</a></li>
-                            <li class="d-inline menu_link"><a href="#third_screen" class="menu_link header_element">Главные преимущества</a></li>
-                            <li class="d-inline menu_link"><a href="#fourth_screen" class="menu_link header_element">Отзывы учеников</a></li>
-                            <li class="d-inline menu_link"><a href="#fifth_screen" class="menu_link header_element">Кто учит</a></li>
-                            <li class="d-inline menu_link"><a href="#sixth_screen" class="menu_link header_element">Купить курс</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-3 number">
-                        <img src="../img/phone_icon.png" alt="" class="menu_number_picture">
-                        <a href="tel:+79115527228" class="menu_number">+7 (911) 552-72-28</a>
+            <div class="header__menu menu">
+                <div class="menu__logo logo">
+                    <image class="logo__img" src="/img/logo-picture.png"></image>
+                    <a href="#hero" class="logo__text header__link">DREAM NAILS</a>
+                </div>
+                <div class="menu__body">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#learn__title" class="menu__link header__link">Чему научим</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#advantage__title" class="menu__link header__link">Главные преимущества</a>
+                        </li>
+                        <li class="d-lg-inline menu__item">
+                            <a href="#sliders__title" class="menu__link header__link">Отзывы учеников</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#wholearn__title" class="menu__link header__link">Кто учит</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#price__title" class="menu__link header__link">Купить курс</a>
+                        </li>
+                    </ul>
+                    <div class="menu__number">
+                        <img src="/img/phone_icon.png" alt="" class="menu__number__picture">
+                        <a href="tel:+79115527228" class="menu__number__text header__link">+7 (911) 552-72-28</a>
                     </div>
                 </div>
-            </nav>
+                <div class="menu__burger burger">
+                    <div class="burger__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
-
     <main>
         <div class="container">
-            <!-- 1 страница -->
-            <div class="row first_screen">
-                <div class="col-6">
-                    <img src="../img/hero_img.png" alt="" class="first_screen_hero_img">
+            <section id="hero" class="hero">
+                <div class="hero__img">
+                    <img src="/img/hero_img.png" alt="" class="hero__img__picture">
                 </div>
-                <div class="col-6 first_screen_hero_content">
-                    <h1 class="first_screen_hero_title">Станьте мастером маникюра в Архангельске!</h1>
-                    <span class="first_screen_hero_descr">
-                        3-х дневное очное обучение 
-                        <br/>в центре города<br/>
-                        <div class="first_screen_hero_label">от Анастасии Тюряпиной</div>
-                    </span>       
-
-                    <a href="https://vk.com/im?media=&sel=79181585" class="col-4 first_screen_btn_vk-link">
-                        <img class="first_screen_vk_link_svg" src="../img/vk.svg" alt="вк">
-                        <div class="first_screen_vk-link_insc">Написать ВК и получить скидку</div>
-                        <div class="first_screen_vk-link_discount">- 5000 &#x20BD</div>
+                <div class="hero__content">
+                    <h1 class="hero__title">Станьте мастером маникюра в Архангельске!</h1>
+                    <div class="hero__descr">
+                        3-х дневное очное обучение<br>в центре города<br>
+                        <span>от Анастасии Тюряпиной</span>
+                    </div>
+                    <a href="https://vk.com/im?media=&sel=79181585" class="hero__vk-link">
+                        <img class="vk-link__svg" src="/img/vk.svg" alt="вк">
+                        <div class="vk-link__insc">Написать ВК и получить скидку</div>
+                        <div class="vk-link__discount">- 5000 &#x20BD</div>
                     </a>
                 </div>
-            </div>
-
-            <!-- 2 страница -->
-            <div class="row second_screen">               
-                <div class="col-6">
-                    <div>
-                        <h1 id="second_screen" class="screen_title">Чему научим?</h1> 
-                        <div class="second_screen_list">
-                            <ul>
-                                <li class="list_item">Поэтапно разберём весь процесс сознания качественного маникюра и педикюра: от первичного опила до финальной полировки</li>
-                                <li class="list_item">Поговорим о работе с инструментами и материалами</li>
-                                <li class="list_item">Изучим всё о том, как устроен ноготь</li>
-                                <li class="list_item">Расскажем, как предостеречься от инфекций и правильно выполнять стерилизацию</li>
-                                <li class="list_item">Составим план по организации рабочего места и своего дня</li>
-                                <li class="list_item">Научим делать стильные фото своих работ и искать клиентов в соц. сетях</li>
-                            </ul>
-                        </div> 
-                        <img src="../img/random_image1.png" class="second_screen_nails">
+            </section>
+            <section id="learn" class="learn">
+                <div class="learn__title title" id="learn__title">Чему научим?</div>
+                <div class="learn__content">
+                    <div class="learn__text">
+                        <ul class="learn__list">
+                            <li class="learn__item">
+                                Поэтапно разберём весь процесс сознания
+                                качественного маникюра и педикюра:
+                                от первичного опила до финальной полировки
+                            </li>
+                            <li class="learn__item">
+                                Поговорим о работе с инструментами и материалами
+                            </li>
+                            <li class="learn__item">
+                                Изучим всё о том, как устроен ноготь
+                            </li>
+                            <li class="learn__item">
+                                Расскажем, как предостеречься от инфекций и правильно выполнять стерилизацию
+                            </li>
+                            <li class="learn__item">
+                                Составим план по организации рабочего места и своего дня
+                            </li>
+                            <li class="learn__item">
+                                Научим делать стильные фото своих работ и искать клиентов в соц. сетях
+                            </li>
+                        </ul>
                     </div>
-                    
-                </div> 
-
-                <div class="col-6">
-                    <img src="../img/second_screen_book.png" class="second_screen_book">
-                    <div>
-                        <h1 class="screen_title second_screen_title_book">В программе курса</h1> 
-                        <div class="second_screen_list">
-                            <ul>
-                                <li class="list_item"><b>1 день</b> — большой разбор теории</li>
-                                <li class="list_item"><b>2 день</b> — отработка навыков на типсах</li>
-                                <li class="list_item"><b>3 день</b> — практика на реальных моделях</li>
-                            </ul>
-                        </div> 
-                    </div>                                
-                </div>    
-            </div>
-
-            <!-- 3 страница -->
-            <div class="row third_screen">
-                <h1 id="third_screen" class="screen_title">В результате вы:</h1>
-
-                <div class="row third_screen_row third_screen_row1">
-                    <div class="col">
+                    <div class="learn__img">
+                        <img src="/img/program.png" alt="ногти">
+                    </div>
+                </div>
+                <div class="learn__program program">
+                    <div class="program__book book">
+                        <div class="book__line"></div>
+                        <div class="book__circle"></div>
+                        <div class="book__line"></div>
+                        <div class="book__circle"></div>
+                        <div class="book__line"></div>
+                        <div class="book__img"><img src="/img/book.png" alt="книга"></div>
+                        <div class="book__line"></div>
+                    </div>
+                    <div class="program__title title">В программе курса:</div>
+                    <div class="program__text">
+                        <ul class="program__list learn__list">
+                            <li class="program__item learn__item"><span>1 день</span> — большой разбор теории</li>
+                            <li class="program__item learn__item"><span>2 день</span> — отработка навыков на типсах</li>
+                            <li class="program__item learn__item"><span>3 день</span> — практика на реальных моделях</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="advantage" class="advantage">
+                <div class="advantage__title title" id="advantage__title">В результате вы:</div>
+                <div class="advantage__list">
+                    <div class="advantage__item item">
                         <figure>
-                            <p><img src="../img/third_screen_image.png" class="third_screen_image"></p>
-                            <figcaption class="third_screen_text">Сможете стать лучшим мастером в своей студии и получите все навыки для частной работы</figcaption>
+                            <p><img src="/img/advantage/1.png" class="item__image"></p>
+                            <figcaption class="item__text">
+                                Сможете стать лучшим мастером в своей
+                                студии и получите все навыки для частной работы
+                            </figcaption>
                         </figure>
                     </div>
-                    <div class="col">
+                    <div class="advantage__item item">
                         <figure>
-                            <p><img src="../img/third_screen_image2.png" class="third_screen_image"></p>
-                            <figcaption class="third_screen_text">Научитесь делать качественный маникюр и получите практику в настоящей студии на моделях</figcaption>
+                            <p><img src="/img/advantage/2.png" class="item__image"></p>
+                            <figcaption class="item__text">
+                                Научитесь делать качественный маникюр
+                                и получите практику в настоящей студии на моделях
+                            </figcaption>
                         </figure>
                     </div>
-                    <div class="col">
+                    <div class="advantage__item item">
                         <figure>
-                            <p><img src="../img/third_screen_image3.png" class="third_screen_image"></p>
-                            <figcaption class="third_screen_text">Сможете увеличить свой доход и работать по удобному графику</figcaption>
+                            <p><img src="/img/advantage/3.png" class="item__image"></p>
+                            <figcaption class="item__text">
+                                Сможете увеличить свой доход и работать по удобному графику
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="advantage__item item">
+                        <figure>
+                            <p><img src="/img/advantage/4.png" class="item__image"></p>
+                            <figcaption class="item__text">
+                                Станете обладателем сертификата о прохождении курса
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="advantage__item item">
+                        <figure>
+                            <p><img src="/img/advantage/5.png" class="item__image"></p>
+                            <figcaption class="item__text">
+                                Получите возможность для трудоустройства в нашей студии
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="advantage__item item">
+                        <figure>
+                            <p><img src="/img/advantage/6.png" class="item__image"></p>
+                            <figcaption class="item__text">
+                                Если удобно, курс можно оплатить в рассрочку
+                            </figcaption>
                         </figure>
                     </div>
                 </div>
-                
-                <div class="row third_screen_row third_screen_row2">
-                    <div class="col">
-                        <figure>
-                            <p><img src="../img/third_screen_image4.png" class="third_screen_image"></p>
-                            <figcaption class="third_screen_text">Станете обладателем сертификата о прохождении курса</figcaption>
-                        </figure>
+            </section>
+            <section id="sliders" class="sliders">
+                <div class="sliders__title title" id="sliders__title">Отзывы и работы учеников</div>
+                <!-- Slider main container -->
+                <div class="slider reviews swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="slider__wrapper swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="slider__slide swiper-slide">
+                            <div class="slider__image">
+                                <img src="/img/reviews/otziv.png" alt="отзывы">
+                            </div>
+                        </div>
+                        <div class="slider__slide swiper-slide">
+                            <div class="slider__image">
+                                <img src="/img/reviews/otziv.png" alt="отзывы">
+                            </div>
+                        </div>
+                        <div class="slider__slide swiper-slide">
+                            <div class="slider__image">
+                                <img src="/img/reviews/otziv.png" alt="отзывы">
+                            </div>
+                        </div>
                     </div>
-                    <div class="col">
-                        <figure>
-                            <p><img src="../img/third_screen_image5.png" class="third_screen_image"></p>
-                            <figcaption class="third_screen_text">Получите возможность для трудоустройства в нашей студии</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col">
-                        <figure>
-                            <p><img src="../img/third_screen_image6.png" class="third_screen_image"></p>
-                            <figcaption class="third_screen_text">Если удобно, курс можно оплатить в рассрочку</figcaption>
-                        </figure>
-                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-                    
-            </div>
 
-            <!-- 4 страница -->
-            <div class="row fourth_screen">
-                <h1 id="fourth_screen" class="screen_title">Отзывы учеников</h1> 
-            </div>
+
+                <!-- Slider main container -->
+                <div class="slider work swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="slider__wrapper swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="slider__slide swiper-slide">
+                            <div class="slider__image">
+                                <img src="/img/work/work.jpg" alt="работы">
+                            </div>
+                        </div>
+                        <div class="slider__slide swiper-slide">
+                            <div class="slider__image">
+                                <img src="/img/work/work2.jpg" alt="работы">
+                            </div>
+                        </div>
+                        <div class="slider__slide swiper-slide">
+                            <div class="slider__image">
+                                <img src="/img/work/work3.jpg" alt="работы">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </section>
             
-            <!-- 5 страница -->
-            <div class="row fifth_screen">
-                <h1 id="fifth_screen"  class="col-12 screen_title">Кто учит?</h1>
-                <div class="col-6">
-                    <img src="../img/fifth_screen_image.png" class="fifth_screen_picture">
-                </div> 
-                <div class="col-6">
-                    <span class="fifth_screen_descr">
-                        <div class="fifth_screen_descr_hero_label"><br><br>Тюряпина Анастасия Евгеньевна</br></br></div>
-                        <div class="fifth-screen_descr_main"> 
-                            — опытный практик со стажем более 4-х лет, 
-                            основатель собственной студии и магазина товаров для маникюра «DREAM NAILS» 
-                            в центре Архангельска
-                        </div>                     
-                    </span>  
+            <section id="wholearn" class="wholearn">
+                <div class="wholearn__title title" id="wholearn__title">Кто учит?</div>
+                <div class="wholearn__img">
+                    <img src="/img/Anastasia.png" class="wholearn_image" alt="">
                 </div>
-            </div>
-
-            <!-- 6 страница -->
-            <div class="row sixth_screen">
-                <h1 id="sixth_screen" class="col-12 screen_title">Купить курс</h1>
-                <img src="../img/sixth_screen_image.png" class="sixth_screen_image">
-            </div>
+                <div class="wholearn__content content">
+                    <div class="content__title">Тюряпина Анастасия Евгеньевна</div>
+                    <div class="content__descr">
+                        — опытный практик со стажем более 4-х лет,
+                        основатель собственной студии и магазина товаров для маникюра «DREAM NAILS»
+                        в центре Архангельска
+                    </div>
+                </div>
+            </section>
+            
+            <section id="price" class="price">
+                <div class="price__title title" id="price__title">Купить курс</div>
+                <div class="price__course">
+                    <img src="/img/price_course.png" alt="курс">
+                </div>
+                <div class="price__block">
+                    <div class="price__discount">
+                        <img src="/img/discount.png" alt="скидка">
+                        <img src="/img/2.png" alt="" class="discount_varnishes">
+                    </div>
+                    <div class="price__pro pro">
+                        <p class="pro__title">Вы опытный специалист и работаете давно, но есть проблемы?</p>
+                        <p class="pro__list">
+                            — Не получаются определённые этапы?<br>
+                            — Сложности в создании дизайнов?<br>
+                            — Не знаете, где искать клиентов?
+                        </p>
+                        <p class="pro__text">Мы готовы проработать эти и другие проблемы для поиска индивидуального решения. Как итог — полное снятие одной главной волнующей проблемы</p>
+                        <p class="pro__price">Стоимость участия в программе: <span>8 000 &#x20BD</span></p>
+                        <img src="/img/1.png" alt="">
+                    </div>
+                    <a href="https://vk.com/im?media=&sel=79181585" class="hero__vk-link">
+                        <img class="vk-link__svg" src="/img/vk.svg" alt="вк">
+                        <div class="vk-link__insc">Написать ВК и получить скидку</div>
+                        <div class="vk-link__discount">- 5000 &#x20BD</div>
+                    </a>
+                </div>
+            </section>
         </div>
     </main>
 
-    <footer>
-            <div class="row">
-                <div class="col">
-                    <a class="row footer_label">ИП Тюряпина Анастасия Евгеньевна</a>
-                    <a class="row footer_label">ИНН: 291701166506 | ОГРНИП: 309290335800030</a>
-                </div>
+    <footer class="footer">
+        <div class="row">
+            <div class="col">
+                <div class="footer_label">ИП Тюряпина Анастасия Евгеньевна</div>
+                <div class="footer_label">ИНН: 291701166506 <span>|</span><br> ОГРНИП: 309290335800030</div>
+            </div>
 
-                <div class="col">
-                    <center><a href="https://vk.com/dreamnails29" class="footer_logo">DREAM NAILS</a></center>
+            <div class="col footer_logo">
+                <a href="https://vk.com/dreamnails29" class="footer_link">DREAM NAILS</a>
+            </div>
+
+            <div class="col contacts">
+                <div class="contacts_item">
+                    Архангельск, ул. Троицкий, д. 37 | ТЦ «Центр» (2 этаж)
+                    <img src="/img/footer_location_image.png" class="footer_image_gps">
                 </div>
-                    
-                <div class="col contacts">
-                    <div class="contacts_item">                       
-                        <a>Архангельск, ул. Троицкий, д. 37 | ТЦ «Центр» (2 этаж)</a>
-                        <img src="../img/footer_location_image.png" class="footer_image_gps">
-                    </div>                   
-                    <div class="contacts_item">              
-                        <a href="tel:+79115527228" style="color: black;">+7 (911) 552-72-28</a>
-                        <img src="../img/footer_phone_image.png" class="footer_image_phone">
-                    </div>
+                <div class="contacts_item">
+                    <a href="tel:+79115527228" style="color: black;">+7 (911) 552-72-28</a>
+                    <img src="/img/footer_phone_image.png" class="footer_image_phone">
                 </div>
             </div>
-    </footer> 
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js?_V=20220720234459"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_V=20220720234459"></script>
+    <script src="js/script.js?_V=20220720234459"></script>
 </body>
 </html>
