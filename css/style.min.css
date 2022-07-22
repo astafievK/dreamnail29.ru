@@ -891,7 +891,7 @@ img {
 
 @media (min-width: 992px) {
   .sliders {
-    margin-top: 10%;
+    margin-top: 7%;
   }
 }
 .slider.work .slider__image {
@@ -1281,4 +1281,9 @@ img {
   .contacts_item {
     text-align: right;
   }
+}
+
+.reviews{
+  margin-top: 2%;
+  margin-bottom: 6%;
 }
